@@ -12,8 +12,12 @@ import { compose } from '@ioc:Adonis/Core/Helpers'
 import { SoftDeletes } from '@ioc:Adonis/Addons/LucidSoftDeletes'
 import File from './File'
 import UserTargetType from 'App/Enums/UserTargetType'
+import { Filterable } from '@ioc:Adonis/Addons/LucidFilter'
+import UserFilter from './Filters/UserFilter'
 
-export default class User extends compose(BaseModel, SoftDeletes) {
+export default class User extends compose(BaseModel, Filterable, SoftDeletes) {
+  public static $filter = () => UserFilter
+
   @column({ isPrimary: true })
   public id: number
 
