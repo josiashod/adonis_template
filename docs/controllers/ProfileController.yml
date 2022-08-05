@@ -1,0 +1,98 @@
+paths:
+  /api/me/profile:
+    get:
+      tags:
+        - Me
+      summary: User's profile
+      security:
+        - BearerAuth: []
+        - CallCenterAccount: []
+      responses:
+        200:
+          description: Return user's profile infos
+          example:
+            data:
+              id: '...'
+              email: '...'
+
+  /api/me/profile/{id}:
+    put:
+      tags:
+        - Me
+      summary: update user's profile
+      description: update User's profile
+      parameters:
+        - name: id
+          description: id
+          in: path
+          required: true
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                firstname:
+                  type: string
+                lastname:
+                  type: string
+      security:
+        - BearerAuth: []
+        - CallCenterAccount: []
+      responses:
+        200:
+          description: Success
+
+  /api/me/profile/email/{id}:
+    put:
+      tags:
+        - Me
+      summary: update user's profile's email
+      description: update User's profile's email
+      parameters:
+        - name: id
+          description: id
+          in: path
+          required: true
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+      security:
+        - BearerAuth: []
+        - CallCenterAccount: []
+      responses:
+        200:
+          description: Success
+
+  /api/me/profile/email/confirmation/{id}:
+    put:
+      tags:
+        - Me
+      summary: update user's profile's email after confirmation
+      description: update User's profile's email
+      parameters:
+        - name: id
+          description: id
+          in: path
+          required: true
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                token:
+                  type: string
+      security:
+        - BearerAuth: []
+        - CallCenterAccount: []
+      responses:
+        200:
+          description: Success

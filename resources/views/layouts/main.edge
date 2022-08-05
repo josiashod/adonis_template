@@ -1,0 +1,59 @@
+<mjml>
+    <mj-head>
+      <mj-attributes>
+        <mj-all font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"></mj-all>
+        <mj-text font-weight="400" font-size="16px" color="#000000" line-height="24px" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"></mj-text>
+      </mj-attributes>
+    </mj-head>
+    <mj-body background-color="#E7E7E7" width="600px">
+      <mj-section full-width="full-width" background-color="#999999" padding-bottom="15px">
+        <mj-column width="100%">
+          <mj-image src="{{ appUrl + '/images/logo.png' }}" alt="{{appName}}" align="center" width="150px" />
+        </mj-column>
+      </mj-section>
+
+      <mj-wrapper padding-top="0" padding-bottom="0" css-class="body-section">
+        <mj-section background-color="#ffffff" padding-left="15px" padding-right="15px">
+          <mj-column width="100%">
+            <mj-text color="#637381" font-size="16px">
+              {{mailGreeting}},
+            </mj-text>
+            
+            @!section('body')
+
+            <mj-text color="#637381" font-size="14px">
+              {{mailCopyLink}} <br>
+              <a href="{{ link }}">{{ link }}</a>
+            </mj-text>
+
+          </mj-column>
+        </mj-section>
+
+      <mj-section background-color="#ffffff" padding-left="15px" padding-right="15px" padding-top="0">
+        <mj-column width="100%">
+          <mj-divider border-color="#DFE3E8" border-width="1px" />
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#ffffff" padding="0 15px 0 15px">
+        <mj-column width="100%">
+          <mj-text color="#637381" font-size="16px" padding-bottom="30px">
+            {{mailTeamSignature}}
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+      <mj-wrapper full-width="full-width">
+        <mj-section>
+          <mj-column width="100%" padding="0">
+            <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+              {{mailFooter}}.
+            </mj-text>
+            <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+              {{appName}} &copy; {{ new Date().getFullYear() }} {{mailRight}}
+            </mj-text>
+          </mj-column>
+        </mj-section>
+      </mj-wrapper>
+    </mj-body>
+  </mjml>

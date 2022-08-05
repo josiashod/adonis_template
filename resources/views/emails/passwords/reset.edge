@@ -1,0 +1,15 @@
+@layout('layouts/main')
+@section('body')
+
+      <mj-text color="#637381" font-size="16px">
+        {{passwordResetBodyFirst}}. <br>
+        {{passwordResetBodySecond}}
+      </mj-text>
+      
+      <mj-button background-color="#fc904c" align="center" color="#ffffff" font-size="17px" font-weight="bold" href="{{ link }}" width="300px">
+        {{passwordResetButtonMessage}}
+      </mj-button>
+      <mj-text color="#637381" font-size="16px"> 
+        {{notWantResetMessage}}
+      </mj-text>
+@end

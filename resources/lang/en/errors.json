@@ -1,0 +1,21 @@
+{
+  "model_not_found": "Model not found",
+  "user_not_found": "User not found",
+  "user_already_member": "user already member",
+  "account_not_found": "Account not found",
+  "admin_role_required": "You must have admin role",
+  "should_confirm_account": "You have to confirm your account first",
+  "invitation_already_sent_before": "Invitation already sent!",
+  "invalid_user": "Invalid user",
+  "invalid_token": "Invalid token",
+  "invalid_transaction_id": "Invalid transaction ID!",
+  "invalid_payload": "Invalid payload!",
+  "transaction_not_paid": "Transaction not paid!",
+  "unable_to_retrieve_phone_number_price": "Unable to retrieve phone number price",
+  "incorrect_token_value":"Incorrect token value",
+  "token_expired": "Token expired",
+  "no_active_phone": "No active phone number configured yet",
+  "Ok": "Ok",
+  "google_access_denied": "Access was denied",
+  "request_expired": "Request expired. Retry again"
+}

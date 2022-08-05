@@ -1,0 +1,50 @@
+paths:
+  /api/account/users:
+    get:
+      tags:
+        - User
+      summary: find all
+      description: find all users
+      security:
+        - BearerAuth: []
+        - CallCenterAccount: []
+      responses:
+        201:
+          description: success
+
+  /api/account/users/{id}:
+    get:
+      tags:
+        - User
+      summary: find
+      description: find a user by id
+      parameters:
+        - name: id
+          description: User's id
+          in: path
+          required: true
+          type: integer
+      security:
+        - BearerAuth: []
+        - CallCenterAccount: []
+      responses:
+        201:
+          description: success
+
+    delete:
+      tags:
+        - User
+      summary: delete
+      description: Delete a user account
+      parameters:
+        - name: id
+          description: User's account id
+          in: path
+          required: true
+          type: integer
+      security:
+        - BearerAuth: []
+        - CallCenterAccount: []
+      responses:
+        201:
+          description: success

@@ -1,0 +1,21 @@
+{
+  "model_not_found": "Entité non trouvé",
+  "user_not_found": "Utilisateur non trouvé",
+  "account_not_found": "Compte introubable",
+  "admin_role_required": "Vous devez avoir le rôle d'administrateur",
+  "should_confirm_account": "Vous devez d'abord confirmer votre compte",
+  "user_already_member": "Cet utilisateur a déjà été ajouté",
+  "invitation_already_sent_before": "Invitation déjà envoyée",
+  "invalid_token":"Token invalide",
+  "invalid_user":"utilisateur invalide",
+  "invalid_transaction_id": "ID de transaction non valide!",
+  "invalid_payload": "Payload invalide!",
+  "transaction_not_paid": "Transaction impayée!",
+  "unable_to_retrieve_phone_number_price": "Impossible de récupérer le prix du numéro de téléphone",
+  "incorrect_token_value":"Valeur de token incorrecte",
+  "token_expired": "Token expiré",
+  "no_active_phone": "Vous n'avez encore aucun numero de téléphone actif",
+  "Ok": "Ok",
+  "google_access_denied" : "L'accès a été refusé",
+  "request_expired" : "La requête a expiré. Veuillez réessayer"
+}

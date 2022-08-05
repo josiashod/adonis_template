@@ -1,0 +1,9 @@
+{
+  "resource_updated": "Resource updated",
+  "resource_deleted": "Resource deleted",
+  "resource_not_deleted": "Resource not deleted",
+  "invitation": {
+    "sent": "Invitation sent",
+    "processed": "Invitation processed"
+  }
+}

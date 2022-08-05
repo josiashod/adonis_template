@@ -1,0 +1,10 @@
+components:
+  securitySchemes:
+    BearerAuth:
+      type: 'apiKey'
+      in: 'header'
+      name: 'Authorization'
+    CallCenterAccount:
+      type: 'apiKey'
+      in: 'header'
+      name: 'Call-Center-Account'

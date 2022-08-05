@@ -1,0 +1,109 @@
+paths:
+  /api/auth/register:
+    post:
+      tags:
+        - Auth
+      summary: Register
+      description: Create a customer
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                firstname:
+                  type: string
+                lastname:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        200:
+          description: Success
+
+  /api/auth/login:
+    post:
+      tags:
+        - Auth
+      summary: Login
+      description: Customer login
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        200:
+          description: Return auth token
+          example:
+            data:
+              type: 'bearer'
+              token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQi....'
+
+  /api/auth/confirmations:
+    put:
+      tags:
+        - Auth
+      summary: confirm password
+      description: Customer password's confirmation
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                token:
+                  type: string
+      responses:
+        200:
+          description: Return auth token
+          example:
+            data:
+              type: 'bearer'
+              token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQi....'
+
+  /api/auth/passwords:
+    post:
+      tags:
+        - Auth
+      summary: Reset password request
+      description: Customer password's Reset
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+      responses:
+        200:
+          description: Success
+    put:
+      tags:
+        - Auth
+      summary: Reset password
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+                password_reset_token:
+                  type: string
+      responses:
+        200:
+          description: Success

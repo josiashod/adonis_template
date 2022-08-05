@@ -1,0 +1,37 @@
+{
+  "auth.signup.confirmation.subject": "Account confirmation email",
+  "auth.signup.notification.subject": "Account notification email",
+  "auth.signup.invitation.subject": "Invitation mail",
+  "auth.reset.password.subject": "Password reset email",
+  "reset.password": "An email has been sent to you",
+  "invitation": {
+    "subject": "You have received an invitation"
+  },
+  "confirmation": {
+    "subject": "Account Confirmation"
+  },
+  "password_reset": {
+    "subject": "Resetting your password"
+  },
+
+  "greeting": "Hello",
+  
+  "confimration.body.first": "Your account on {appName} has been successfully created.",
+  "confimration.update.email.body.first": "Your request to reset your email address to {appName} has been processed successfully.",
+  "confimration.body.second": "Please click on the link below for confirmation.",
+  "buttom.link": "Confirm my email",
+
+  "invitation.body.first": "You are invited to join {appName} by {sender}.",
+  "invitation.body.second": "Please click on the link below to accept the invitation.",
+  "invitation.buttom.message": "Accept the invitation",
+
+  "password.reset.body.first": "Your password reset request on {appName} has been processed successfully.",
+  "password.reset.body.second": "Please click on the link below to reset your password.",
+  "password.reset.buttom.message": "Reset",
+  "not.want.reset.password.buttom.message": "If you no longer want to reset your password, please ignore this email. Your password will not be reset until you access the link opposite for the reset.",
+
+  "copy.link": "The button is not responding? Copy the link below in the browser",
+  "team.signature": "The Call Center team",
+  "right.reserved": "All rights reserved.",
+  "bottom.footer": "You are receiving this email because you have registered with {appName} and agreed to receive emails from us."
+}

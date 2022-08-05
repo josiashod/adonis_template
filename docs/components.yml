@@ -1,0 +1,35 @@
+parameters:
+  page:
+    in: query
+    name: page
+    required: false
+    schema:
+      type: integer
+      minimum: 0
+    description: The paginator page number
+  per_page:
+    in: query
+    name: per_page
+    required: false
+    schema:
+      type: integer
+      minimum: 1
+      default: 20
+    description: The numbers of items to return.
+  account:
+    in: header
+    name: Call-Center-Account
+    required: true
+    schema:
+      type: integer
+      minimum: 1
+    description: The current account id.
+
+  components:
+    securitySchemes:
+      bearerAuth:
+        type: http
+        scheme: bearer
+        bearerFormat: JWT
+  security:
+    - bearerAuth: []

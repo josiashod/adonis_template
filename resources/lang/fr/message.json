@@ -1,0 +1,13 @@
+{
+  "operated": "Operation éffectuée",
+  "updated": "Ressource mise à jour",
+  "deleted": "Ressource supprimée",
+  "not_deleted": "Ressource non supprimée",
+  "resource_updated": "Ressource mise à jour",
+  "resource_deleted": "Ressource supprimée",
+  "resource_not_deleted": "Ressource non supprimée",
+  "invitation": {
+    "sent": "Invitation envoyée",
+    "processed": "Invitation traitée"
+  }
+}
