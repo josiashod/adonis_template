@@ -987,7 +987,7 @@ acorn@^8.0.5, acorn@^8.7.0:
 
 adonis-lucid-filter@^4.1.0:
   version "4.1.0"
-  resolved "https://registry.npmjs.org/adonis-lucid-filter/-/adonis-lucid-filter-4.1.0.tgz"
+  resolved "https://registry.yarnpkg.com/adonis-lucid-filter/-/adonis-lucid-filter-4.1.0.tgz#2aec8c0c2d58caf10ea2800e1555f858d7cb2d3b"
   integrity sha512-G1GRFL0CJxRbr5lR09GyVska0Bkq8jGY1gV2CCE8+J4MIiiv/7ujqnHyeirVQ94dKw1BkPmt292pYoHyAz+8uw==
   dependencies:
     type-fest "^2.3.4"

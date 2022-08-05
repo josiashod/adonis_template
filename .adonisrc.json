@@ -6,7 +6,8 @@
     "@adonisjs/repl/build/commands",
     "@adonisjs/lucid/build/commands",
     "@adonisjs/mail/build/commands",
-    "adonis5-swagger/build/commands"
+    "adonis5-swagger/build/commands",
+    "adonis-lucid-filter/build/commands"
   ],
   "exceptionHandlerNamespace": "App/Exceptions/Handler",
   "aliases": {
@@ -36,7 +37,8 @@
     "adonis5-swagger",
     "adonis-lucid-soft-deletes",
     "@adonisjs/i18n",
-    "@adonisjs/ally"
+    "@adonisjs/ally",
+    "adonis-lucid-filter"
   ],
   "aceProviders": [
     "@adonisjs/repl"
