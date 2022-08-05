@@ -14,6 +14,7 @@ import File from './File'
 import UserTargetType from 'App/Enums/UserTargetType'
 import { Filterable } from '@ioc:Adonis/Addons/LucidFilter'
 import UserFilter from './Filters/UserFilter'
+import Config from '@ioc:Adonis/Core/Config'
 
 export default class User extends compose(BaseModel, Filterable, SoftDeletes) {
   public static $filter = () => UserFilter
@@ -84,6 +85,6 @@ export default class User extends compose(BaseModel, Filterable, SoftDeletes) {
   @computed()
   public get image() {
     if (this.fileId) return this.file.url
-    else return ''
+    else return `${Config.get('app.appUrl')}/images/default-user.png`
   }
 }
