@@ -31,8 +31,8 @@ Without any changes, this app is connected to a Contentful space with read-only 
 Clone the repo and install the dependencies.
 
 ```bash
-git clone https://github.com/josiashod/adonis_template.git
-cd adonis_template
+git clone https://github.com/josiashod/adonis_template_V5_7_5.git
+cd adonis_template_V5_7_5
 yarn install
 ```
 
