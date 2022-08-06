@@ -20,6 +20,8 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
+Route.get('/files/:slug', 'FilesController.show').as('files.show')
+
 Route.group(() => {
   Route.group(() => {
     // Auth

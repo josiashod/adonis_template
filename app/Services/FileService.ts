@@ -42,4 +42,13 @@ export default class FileService {
       return false
     }
   }
+
+  public static async getStream(file: FileInterface) {
+    try {
+      // @ts-ignore
+      return await Drive.use(`${file.disk}`).getStream(`${file.path}`)
+    } catch (error) {
+      throw error
+    }
+  }
 }
