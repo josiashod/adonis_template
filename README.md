@@ -21,6 +21,7 @@ You can see a hosted version of `The node.js example app` on <a href="https://th
 ## Requirements
 
 * Node.js v14
+* Redis
 * Yarn v1.22.19
 * Git
 
