@@ -28,12 +28,12 @@ export default class PasswordUpdateAction {
       throw new HttpException($t("errors.incorrect_token_value"), 400)
     }
 
-    let newToken = await Tokenizer.hash(password)
+    // let newToken = await Tokenizer.hash(password)
 
     await user
-      .merge({ password: newToken, passwordResetDigest: null, passwordResetSentAt: null })
+      .merge({ password: password, passwordResetDigest: null, passwordResetSentAt: null })
       .save()
 
-    return newToken
+    return password
   }
 }
